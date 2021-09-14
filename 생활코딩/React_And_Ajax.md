@@ -34,7 +34,7 @@ class Nav extends Component {
       .then(function(result){  //.then 함수에 function의 첫번째 인자로 로딩 텍스트
         return result.json();
       })
-      .then(function(json){   // .ther 함수의 첫번째 인자로 Json Object
+      .then(function(json){   // .then 함수의 첫번째 인자로 Json Object
         console.log(json);
         this.setState({list:json}); //State에 List를 초기화 한다.
       }.bind(this));
